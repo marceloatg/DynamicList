@@ -151,7 +151,7 @@ void DynamicList<Element>::print(void)
 {
 	if (size == 0)
 	{
-		cout << "List is empty." << endl;
+		std::cout << "List is empty." << endl;
 	}
 	else
 	{
@@ -159,7 +159,7 @@ void DynamicList<Element>::print(void)
 		DynamicListNode<Element>* aux = this->head;
 		while (true)
 		{
-			cout << "Element " << counter++ << " : " << aux->data << endl;
+			std::cout << "Element " << counter++ << " : " << aux->data << endl;
 			if ((aux = aux->link) == NULL) break;
 		}
 	}
